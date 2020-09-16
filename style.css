@@ -1,0 +1,208 @@
+html {
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    min-height: 100vh;
+}
+
+
+.hero-about-img{
+    background-image: url("https://beamena.com/wp-content/uploads/2020/09/hero.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    margin: 3%;
+    background-position: bottom;
+
+}
+.about-section-two{
+    background-image: url("https://beamena.com/wp-content/uploads/2020/09/fondo-texto.jpg")!important;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 10% 0px;
+}
+.about-section-gridone{
+    max-width: 1150px;
+    margin:0 auto;
+    text-align: center;
+    background-image: url("https://beamena.com/wp-content/uploads/2020/09/rectangulo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 700px;
+    
+}
+.about-item1{
+    background-image: url(https://beamena.com/wp-content/uploads/2020/09/parypipol.png);
+    background-position: center;
+    background-size: contain;
+    height: 220px;
+    background-repeat: no-repeat;
+    position: relative;
+    top: -90px;
+    margin-bottom: -50px;
+}
+    
+}
+.about-item2{
+    padding: 5%;
+    position: relative;
+    top: -100px;
+}
+.about-text1{
+    font-size: 1.61em;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.3;
+    padding-bottom: 1em!important;
+}
+.instagram-partirla{
+    padding: 5% 0px;
+    background-color: #fdf2f2;
+    text-align: center;   
+}
+.instagram-about-img{
+    background-image: url(https://beamena.com/wp-content/uploads/2020/09/instagram.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120px;
+    max-width: 550px;
+    margin: 0 auto;
+    margin-top: -5px!important;
+    margin-bottom: -5px!important;
+}
+.quieres{
+    font-size: 2.1em;
+    letter-spacing: 1px;
+}
+.mis-logros{
+    background-image: url("https://beamena.com/wp-content/uploads/2020/09/aboutlogrosbg.jpg")!important;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 6% 0px;
+}
+.logros-title{
+    text-align: center;
+}
+.logros-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1250px;
+    margin:0 auto;
+    grid-gap:5%;
+    justify-content: center;
+    align-items: center;
+}
+.logros-text-info{
+    text-align: right;
+    font-size: 1.6em;
+    line-height: 1.5;
+}
+.logros-text-info2{
+    text-align: left;
+    font-size: 1.6em;
+    line-height: 1.5;
+}
+.solo-bea{
+    background-image: url("https://beamena.com/wp-content/uploads/2020/09/cuando.jpg")!important;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 6% 0px;
+}
+.solo-bea-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1150px;
+    margin:0 auto;
+    grid-gap:5%;
+}
+.solo-bea-item1{
+    text-align: right;
+}
+.ycuando{
+    font-size: 5em;
+    color:#fff;
+}
+.solobeaimg{
+    position: relative;
+    top: -100px;
+}
+.solo-beatext{
+    background-color: #fdf2f2;
+    padding: 8% 5%;
+}
+.solobeatext{
+    font-size: 1.4em;
+    text-align: justify;
+}
+
+.align-left {
+    float: left;
+    margin-right: 20px;
+  }
+
+  .align-right {
+    float: right;
+    margin-left: 20px;
+  }
+
+  .slide-in {
+    opacity: 0;
+    transition: all .5s;
+  }
+
+  .align-left.slide-in {
+    transform: translateX(-30%) scale(0.95);
+  }
+  
+  .align-right.slide-in {
+    transform: translateX(30%) scale(0.95);
+  }
+
+  .slide-in.active {
+    opacity: 1;
+    transform: translateX(0%) scale(1);
+  }
+
+
+
+@media screen and (max-width:1000px){
+    .logrotitle {
+        max-width: 50%!important;
+    }
+    .about-section-gridone{
+        background-image: none;
+    }
+    .solo-bea-grid, .logros-grid {
+        grid-template-columns: 1fr;
+    
+    }
+    .about-item2,.logros-text-info, .logros-text-info2{
+        padding: 5%;
+        text-align: center;
+    }
+    .logros-grid{
+        grid-template-rows: repeat(4,auto);
+    grid-gap: 0;
+    }
+    .logros-item3{
+        grid-row: 3;
+    }
+    .ycuando {
+        font-size: 3em;
+        color: #fff;
+        text-align: center;
+    }
+    .solobeaimg{
+    position: relative;
+    top: -50px;
+    left: -70px;
+    }
+}
